@@ -1,6 +1,26 @@
-# Welcome to Remix!
+# Remix HMR Vercel
+
+Remix HMR example with both Vercel config and Express server on development.
 
 - [Remix Docs](https://remix.run/docs)
+- [remixv1.14.0](https://github.com/remix-run/remix/releases/tag/remix%401.14.0)
+- [remixv1.12.0](https://github.com/remix-run/remix/releases/tag/remix%401.12.0)
+
+## Development
+
+To run your Remix app locally, make sure your project's local dependencies are installed:
+
+```sh
+pnpm i
+```
+
+Afterwards, start the Remix development server like so:
+
+```sh
+pnpm dev
+```
+
+Open up [localhost:3000](http://localhost:3000) and you should be ready to go!
 
 ## Deployment
 
@@ -14,21 +34,3 @@ vercel
 ```
 
 It is generally recommended to use a Git repository, because future commits will then automatically be deployed by Vercel, through its [Git Integration](https://vercel.com/docs/concepts/git).
-
-## Development
-
-To run your Remix app locally, make sure your project's local dependencies are installed:
-
-```sh
-npm install
-```
-
-Afterwards, start the Remix development server like so:
-
-```sh
-npm run dev
-```
-
-Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
-
-If you're used to using the `vercel dev` command provided by [Vercel CLI](https://vercel.com/cli) instead, you can also use that, but it's not needed.
