@@ -2,9 +2,11 @@
 
 Remix HMR example with both Vercel config and Express server on development.
 
+The config is just combining the template from Remix with Express and Vercel based on the environment.
+
 - [Remix Docs](https://remix.run/docs)
-- [remixv1.14.0](https://github.com/remix-run/remix/releases/tag/remix%401.14.0)
-- [remixv1.12.0](https://github.com/remix-run/remix/releases/tag/remix%401.12.0)
+- [remix@1.14.0](https://github.com/remix-run/remix/releases/tag/remix%401.14.0)
+- [remix@1.12.0](https://github.com/remix-run/remix/releases/tag/remix%401.12.0)
 
 ## Development
 

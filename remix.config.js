@@ -18,5 +18,6 @@ module.exports = {
 
   future: {
     unstable_dev: true,
+    unstable_tailwind: true,
   },
 };
