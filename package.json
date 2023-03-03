@@ -3,7 +3,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
-    "dev": "npm-run-all build --parallel \"dev:*\"",
+    "dev": "pnpm build && run-p dev:*",
     "dev:node": "cross-env NODE_ENV=development nodemon --require dotenv/config ./server-express.js --watch ./server-express.js",
     "dev:remix": "remix dev",
     "start": "cross-env NODE_ENV=production node ./server-express.js",
