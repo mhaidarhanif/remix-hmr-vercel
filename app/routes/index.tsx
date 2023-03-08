@@ -2,10 +2,9 @@ import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
 export async function loader() {
-  const examples = Array.from(Array(10).keys());
+  const examples = Array.from(Array(100).keys());
   return json({ examples });
 }
-
 export default function IndexRoute() {
   const { examples } = useLoaderData<typeof loader>();
 
@@ -24,6 +23,12 @@ export default function IndexRoute() {
       </header>
 
       <main className="space-y-2">
+        <ul className="flex gap-2 flex-wrap">
+          {examples.map((example) => {
+            return <li key={example}>{example}</li>;
+          })}
+        </ul>
+
         <ul>
           <li>
             <span>Repo: </span>
@@ -44,15 +49,11 @@ export default function IndexRoute() {
             </a>
           </li>
         </ul>
+
         <p>
           Either change the website content or the array contents to see the HMR
           and HDR.
         </p>
-        <ul className="flex gap-2 flex-wrap">
-          {examples.map((example) => {
-            return <li key={example}>{example}</li>;
-          })}
-        </ul>
       </main>
     </div>
   );
